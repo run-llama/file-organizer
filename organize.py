@@ -106,7 +106,6 @@ def describe_file(file_path):
         json.dump({'description': str(response)}, file)
     return str(response)
 
-## TODO: update to understand get_files returns paths now
 def describe_files(folder):
     file_paths = get_files_in_folder(folder)
     for file_path in file_paths:
